@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: saverestrictedcontent
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: API_ID
+        value: 26359071
+      - key: API_HASH
+        value: 3035f5b2360f175c2fbfc6c7b6aa4ddc
+      - key: BOT_TOKEN
+        value: 7215780117:AAGn1JqyLvHuonhf7NzI5KUbaMDiUfVxb9g
+      - key: DOWNLOAD_DIR
+        value: downloads
+      - key: THUMBNAIL_URL
+        value: https://i.ibb.co/ygRLJMc/thumbnail.jpg
